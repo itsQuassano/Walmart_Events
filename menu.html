@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Walmart - Event Services Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid nav-bar">
+            <div class="container">
+                <nav class="navbar navbar-light navbar-expand-lg py-4">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="text-primary fw-bold mb-0">Walmart<span class="text-dark">Events</span> </h1>
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="service.html" class="nav-item nav-link">Services</a>
+                            <a href="event.html" class="nav-item nav-link">Events</a>
+                            <a href="menu.html" class="nav-item nav-link">Menu</a>
+                            <a href="book.html" class="nav-item nav-link">Booking</a>
+                        </div>
+                        <div class="cart">
+                            <i style="font-size:24px" class="fa">&#xf07a;</i>
+                            <span id="count">0</span>
+                        </div>
+                        <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+       
+
+        <div class="container">
+            <div id="root"></div>
+            <!-- Cart Modal -->
+            <div id="cartModal" class="sidebar hidden">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cart-container">
+                    <div id="cartItem">Your cart is empty</div>
+                </div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">$ 0.00</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Hero Start -->
+        <div class="container-fluid bg-light py-6 my-6 mt-0">
+            <div class="container text-center animated bounceInDown">
+                <h1 class="display-1 mb-4">Menu</h1>
+                <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-dark" aria-current="page">Menu</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+        <!-- Menu Start -->
+        
+
+
+        <div class="container-fluid menu bg-light py-6 my-6">
+            <div class="container">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Menu</small>
+                    <h1 class="display-5 mb-5">Most Popular Food in the World</h1>
+                </div>
+                <div class="tab-class text-center">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp" data-wow-delay="0.1s">
+                        <li class="nav-item p-2">
+                            <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill active" data-bs-toggle="pill" href="#tab-6">
+                                <span class="text-dark" style="width: 150px;">Catering Equipments</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill" data-bs-toggle="pill" href="#tab-7">
+                                <span class="text-dark" style="width: 150px;">Furniture and Seating</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill" data-bs-toggle="pill" href="#tab-8">
+                                <span class="text-dark" style="width: 150px;">Decor and Ambiance</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill" data-bs-toggle="pill" href="#tab-9">
+                                <span class="text-dark" style="width: 150px;">Entertainment and Activities</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill" data-bs-toggle="pill" href="#tab-10">
+                                <span class="text-dark" style="width: 150px;">Audio and Visual Equipment</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-6" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.1s">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-01.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Chafing Dishes</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(0)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">For keeping food warm during business events.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.2s">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Coffee Makers and Urns</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(1)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">For serving coffee and hot beverages.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.3s">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-03.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Conference Tables and Chairs</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(2)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Essential for meetings and seminars.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.4s">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-04.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Podium and Microphones</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(3)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0"> For speakers and presentations.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.5s">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-05.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Table Linens and Skirting</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(4)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">To enhance the appearance of catering tables.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.6s">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-06.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Buffet Tables</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(5)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Designated tables for food presentation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.7s">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Serving Utensils</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(6)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Tongs, ladles, and spoons for self-service.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 wow bounceInUp" data-wow-delay="0.8s">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-08.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Food Warmers and Heated Trays</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(7)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">To keep dishes at the right temperature</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-7" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-01.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Beverage Dispensers</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(8)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">For drinks like juices or iced tea.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-03.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Tableware</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(9)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Plates, cutlery, and glasses for guests.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-05.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Cocktail Tables</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(10)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Tall tables for guests to stand around.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Bar Stools</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(11)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">For seating around cocktail tables or bars.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-08.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Ice Buckets and Tongs</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(12)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0"> For serving chilled beverages.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Decorative Lighting</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(13)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0"> LED lights or string lights to set the ambiance.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Bartender Tools</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(14)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Shakers, strainers, and muddlers for professional bartending.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-09.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Pub Tables and Stools</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(15)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Traditional high-top tables and stools.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-8" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-01.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Draft Beer Systems</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(16)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Kegs and dispensers for draft beer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Jukeboxes or Karaoke Machines</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(17)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">For entertainment.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-03.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Barware</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(18)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Shakers, stirrers, and cocktail glasses.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-04.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Game Tables</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(19)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Pool tables, dartboards, or foosball.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-05.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Beer Pong Tables</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(20)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">For pub games and fun.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-06.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Event Tents</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(21)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">For outdoor receptions or large gatherings</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Dance Floors</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(22)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Portable flooring for dancing.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-08.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Lounge Furniture</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(23)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Sofas and chairs for guest relaxation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-9" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-06.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Table Settings</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(24)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Elegant tablecloths, napkins, and centerpieces.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Photo Booths</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(25)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">For guests to take pictures and create memories.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-09.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Heaters or Coolers</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(26)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">For temperature control in tents.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Themed Decorations</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(27)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0"> Banners, balloons, and streamers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-03.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Party Games and Activities</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(28)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0"> Bounce houses, inflatable slides, or game sets.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-05.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Cake Stands and Dessert Tables</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(29)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">For displaying cakes and treats.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Party Favors</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(30)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Items like goody bags or personalized gifts.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-09.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Sound Systems</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(31)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Portable speakers or PA systems for music and announcements.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-10" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-06.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Pinatas</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(32)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Filled with candy and toys for children’s parties.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Craft Stations</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(33)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">For DIY projects and activities for kids.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-09.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Portable Bars</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(34)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">For setting up a bar area anywhere.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Outdoor Heaters</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(36)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">For comfort during cooler evenings.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-03.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Lawn Games</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(37)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Such as cornhole, giant Jenga, and horseshoes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-05.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Event Signage</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(38)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Custom signs for directions, menus, or event information.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Projectors and Screens</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(39)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">For presentations, movies, or slideshows.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="menu-item d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-09.jpeg" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                <h4>Live Plants and Greenery</h4>
+                                                <div class="price-and-button d-flex align-items-center">
+                                                    <h4 class="text-primary">$90/Day</h4>
+                                                    <button onclick="addtocart(40)" class="add-to-cart-button">+</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">For enhancing decor with natural elements.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h1 class="text-primary">Wal<span class="text-dark">Mart</span></h1>
+                            <p class="lh-lg mb-4">There cursus massa at urnaaculis estieSed aliquamellus vitae ultrs condmentum leo massamollis its estiegittis miristum.</p>
+                            <div class="footer-icon d-flex">
+                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-primary btn-sm-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Special Facilities</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Wedding Services</a>
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Corporate Parties</a>
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Renting Services</a>
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Special Events</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Contact Us</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <p><i class="fa fa-map-marker-alt text-primary me-2"></i> 123 Street, New York, USA</p>
+                                <p><i class="fa fa-phone-alt text-primary me-2"></i> (+012) 3456 7890 123</p>
+                                <p><i class="fas fa-envelope text-primary me-2"></i> info@example.com</p>
+                                <p><i class="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Social Gallery</h4>
+                            <div class="row g-2">
+                                <div class="col-4">
+                                     <img src="img/menu-01.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="img/menu-02.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="img/menu-03.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="img/menu-04.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="img/menu-05.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="img/menu-06.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Walmart</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 my-auto text-center text-md-end text-white">
+                        Designed By <a class="border-bottom" href="#">The Brahmins</a> Distributed By <a class="border-bottom" href="https://www.panvisage.com/">Panvisage INC</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
