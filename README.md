@@ -1,0 +1,2 @@
+# Walmart_Events
+# At Walmart, our mission is to make top-notch products accessible without the hassle of ownership. We understand that purchasing high-end items can be a significant investment, which is why we provide a smart alternative—renting. By offering products on a rental basis with a security deposit and daily rental fees, we ensure that you can enjoy the best without the long-term commitment.
